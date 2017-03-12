@@ -1,0 +1,32 @@
+---
+layout  : default
+---
+
+<header>
+    <div class="header-content" style="background-color: rgba(0,33,28,0.61); width: 100%; min-height: 100%; text-transform: uppercase">
+        <div class="header-content-inner">
+            <img class="img-responsive img-circle center resize" style="border: 5px solid white; margin-bottom: 20px" src="/assets/img/{{ page.profile_picture }}" title="{{ site.author }}">
+            <label style="word-spacing: 20px; font-size: 50px" id="homeHeading">
+
+                {{ site.author }}
+
+            </label>
+            <hr style="width: 500px; padding-top:0px">
+
+            {{ page.descr_words }}
+
+        </div>
+    </div>
+</header>
+<div class="container" style="padding: 50px 30px 0px; background-color: white; border: 1px solid #dcdcdc">
+    <div class="row" style="margin-bottom: 200px">
+        <div class="col-lg-12">
+
+            {{ content }}
+
+        </div>
+    </div>
+
+    {% include status_bar.html %}
+
+</div>

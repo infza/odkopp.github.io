@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Aktuálne projekty",
+    "url": "#p10",
+    "sublinks":[
+      {
+        "name": "Bakalárska Práca",
+        "url": "#p11"
+      },
+      {
+        "name": "Štatistiky NHL",
+        "url": "#p12"
+      }
+    ]
+  },
+  {
+    "name": "Staršie projekty",
+    "url": "#p20",
+    "sublinks":[
+      {
+        "name": "Facebook Time Counter",
+        "url": "#p21"
+      },
+      {
+        "name": "See Post Only Once",
+        "url": "#p22"
+      },
+      {
+        "name": "YoutList",
+        "url": "#p23"
+      }
+    ]
+  }
+]

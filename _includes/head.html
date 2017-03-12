@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<meta name="description" content="{{ site.description }}"/>
+<meta name="keywords" content="stu, fiit, wp, informatika, programator, študent"/>
+<meta name="author" content="Ondrej Pitoňák"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" type="image/png" href="/assets/img/op.png">
+
+{% if page.heading %}
+<title>{{ page.heading | append: " - " | append: site.author }}</title>
+{% else %}
+<title>{{ site.author }}</title>
+{% endif %}
+
+<script>
+    // posun o -70 pixelov nad miesto kam sa odkazujem ... aby bolo vidno aj nazov odkazu
+    window.addEventListener("hashchange", function () {
+        window.scrollTo(window.scrollX, window.scrollY - 70);
+    });
+</script>
+
+<!-- jQuery -->
+<script src="/assets/js/jquery-3.1.1.min.js"></script>
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- css -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/nav_bar_color.css">

@@ -1,0 +1,10 @@
+<div class="row well">
+    <div class="col-xs-12">
+        {% if page.date %}
+            {% assign right_time = page.date | date: "%-d. %-m. %Y" %}
+            {{ site.author | append : " &nbsp; &nbsp; " | append : right_time }}
+        {% else %}
+            {{ site.author }}
+        {% endif %}
+    </div>
+</div>

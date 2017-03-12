@@ -1,0 +1,9 @@
+{% for link in site.data.projects %}
+
+    <a href="{{ link.url }}">{{ link.name }}</a></br>
+
+    {% for sublink in link.sublinks %}
+        - <a href="{{ sublink.url }}">{{ sublink.name }}</a></br>
+    {% endfor %}
+
+{% endfor %}

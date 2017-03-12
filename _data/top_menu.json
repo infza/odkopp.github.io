@@ -1,0 +1,25 @@
+{
+  "left" : [],
+  "right":[
+    {
+      "name"   : "Životopis",
+      "url"    : "/cv.html",
+      "active" : 2
+    },
+    {
+      "name"   : "Záľuby",
+      "url"    : "/interests.html",
+      "active" : 3
+    },
+    {
+      "name"   : "Projekty",
+      "url"    : "/projects.html",
+      "active" : 4
+    },
+    {
+      "name"   : "Webové publikovanie",
+      "url"    : "/wp.html",
+      "active" : 5
+    }
+  ]
+}
