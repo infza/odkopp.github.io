@@ -123,6 +123,7 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 
 
 <div id="z2" class="tab-pane fade" style="min-height: 500px">
+{::options parse_block_html="false" /}
 # 2. Zadanie 
 
 #### Štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, generovaný obsah
@@ -168,7 +169,7 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 - Zmenené číslovanie obrázkov a tabuliek
 - Odstránenie slova kapitola z názvu kapitoly. Ostalo iba číslo (automaticky generované) a za ním sa nachádza požadovaný názov kapitoly
 - Podčiarknutie názvu kapitoly
-
+{::options parse_block_html="true" /}
 </div>
 
 
