@@ -127,7 +127,7 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 
 #### Štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, generovaný obsah
 - Celý text je členený na kapitoly ( *`<chapter>`* ) a podkapitoly ( *`<section>`* )
-- Celý dokument má automaticky generovaný obsah ( *toc* )
+- Celý dokument má automaticky generovaný obsah ( *`toc`* )
 
 &nbsp;
 
@@ -143,7 +143,7 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 - V dokumente sa nachádza odkaz na časť vlastného dokumentu napríklad na začiatku 4. kapitoly, z kade sa odkazujem na analýzu ( *`<xref>`* )
 - V poznámkach pod čiarou sa nachádza množstvo fungujúcich URL odkazov ( *`<ulink>`* )
 - V literatúre sa nachádzajú tiež funkčné URL odkazy ( *`<ulink>`* )
-- 
+ 
 &nbsp;
 
 #### Poznámka pod čiarou
