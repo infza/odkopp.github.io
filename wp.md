@@ -123,7 +123,7 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 
 
 <div id="z2" class="tab-pane fade" style="min-height: 500px">
-# 2. Zadanie 
+# Zadanie 2
 
 #### Štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, generovaný obsah
 - Celý text je členený na kapitoly ( *`<chapter>`* ) a podkapitoly ( *`<section>`* )
