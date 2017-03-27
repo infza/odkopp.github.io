@@ -123,43 +123,54 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 
 
 <div id="z2" class="tab-pane fade" style="min-height: 500px">
-{::options parse_block_html="false" /}
 # 2. Zadanie 
 
-#### Štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, generovaný obsah
-- Celý text je členený na kapitoly ( *<chapter>* ) a podkapitoly ( *<section>* )
-- Celý dokument má automaticky generovaný obsah ( *toc* )
+### Štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, generovaný obsah
+- Celý text je členený na kapitoly ( <chapter> ) a podkapitoly ( <section> )
+- Celý dokument má automaticky generovaný obsah ( toc )
 
+&nbsp;
 
-#### Zvýraznenie slov, zvýraznenie členenia textu odrážkami alebo číslovaním
-- Zvýraznené časti textu je možné nájsť napríklad ku koncu dokumentu ( *5.1.* )
+### Zvýraznenie slov, zvýraznenie členenia textu odrážkami alebo číslovaním
+- Zvýraznené časti textu je možné nájsť napríklad ku koncu dokumentu ( 5.1. )
 - Zvýraznenie je pomocou 
-    - Bold, Italic ( *<emphasis>*, *<emphasis>* )
-    - Číslovania ( *<orderedlist>*, *<listitem>* )
+    - Bold, Italic ( <emphasis>, <emphasis> )
+    - Číslovania ( <orderedlist>, <listitem> )
 
-#### Odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL
-- V dokumente sa nachádza odkaz na časť vlastného dokumentu napríklad na začiatku 4. kapitoly, z kade sa odkazujem na analýzu ( *<xref>* )
-- V poznámkach pod čiarou sa nachádza množstvo fungujúcich URL odkazov ( *<ulink>* )
-- V literatúre sa nachádzajú tiež funkčné URL odkazy ( *<ulink>* )
+&nbsp;
 
-#### Poznámka pod čiarou
-- Poznámok pod čiarou je relatívne veľa, pričom sa väčšinou jedná o URL na zdroj obrázkov alebo na rôzne systémy, ktoré boli v dokumente opísané. Je to teda spracované rovnako ako to bolo v pôvodnom dokumente na Bakalársky projekt ( *<footnote>* )
+### Odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL
+- V dokumente sa nachádza odkaz na časť vlastného dokumentu napríklad na začiatku 4. kapitoly, z kade sa odkazujem na analýzu ( <xref> )
+- V poznámkach pod čiarou sa nachádza množstvo fungujúcich URL odkazov ( <ulink> )
+- V literatúre sa nachádzajú tiež funkčné URL odkazy ( <ulink> )
+- 
+&nbsp;
 
-#### Zoznam použitej literatúry a zdrojov vrátane ich citácie v texte
-- Na konci dokumentu sa nachádza zoznam použitej literatúru ( *<bibliography>*, *<bibliomixed>* )
-- V texte sa nachádzajú odkazy na túto literatúru, pričom väčšina z nich sa nachádza v Úvode ( *<xref>* )
+### Poznámka pod čiarou
+- Poznámok pod čiarou je relatívne veľa, pričom sa väčšinou jedná o URL na zdroj obrázkov alebo na rôzne systémy, ktoré boli v dokumente opísané. Je to teda spracované rovnako ako to bolo v pôvodnom dokumente na Bakalársky projekt ( <footnote> )
 
-#### Vloženie obrázku a tabuliek, odkazy na ne v texte; zoznam obrázkov a tabuliek v úvode alebo závere textu
-- V dokumente sa nachádza zopár obrázkov vrátane popisu ( *<figure>*, *<emphasis>*, *<imageobject>* ) a na každý je odkaz v texte ( *<xref>* )
-- Na konci sa nachádza jedna tabuľka ( *<table>* ), ktorá bola naformátovaná do relatívne rovnakej podoby ako bola v pôvodnom dokumente vrátane hlavičky ( *<thead>* ), ale aj tela ( *<tbody>* ), pričom je rovnaké aj orámovanie ( *rowsep* )
-- Niektoré obrázky sú zmenšené aby boli krajšie zobrazené ( *width=”60%”* )
-- Na začiatku sa nachádza zoznam tabuliek a obrázkov ( *table*, *figure* )
+&nbsp;
 
-#### Vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni
-- Na konci pred použitou literatúrou sa nachádza register pojmov, ktorý obsahuje požadovaný počet pojmov usporiadaných do dvoch úrovní. Zameral som sa na pojmy, ktoré majú podľa mňa význam pre tento dokument ( *<index>*, *<indexterm>*, *<primary>*, *<secondary>* )
+### Zoznam použitej literatúry a zdrojov vrátane ich citácie v texte
+- Na konci dokumentu sa nachádza zoznam použitej literatúru ( <bibliography>, <bibliomixed> )
+- V texte sa nachádzajú odkazy na túto literatúru, pričom väčšina z nich sa nachádza v Úvode ( <xref> )
 
+&nbsp;
 
-#### Prispôsobenia v XSLT
+### Vloženie obrázku a tabuliek, odkazy na ne v texte; zoznam obrázkov a tabuliek v úvode alebo závere textu
+- V dokumente sa nachádza zopár obrázkov vrátane popisu ( <figure>, <emphasis>, <imageobject> ) a na každý je odkaz v texte ( <xref> )
+- Na konci sa nachádza jedna tabuľka ( <table> ), ktorá bola naformátovaná do relatívne rovnakej podoby ako bola v pôvodnom dokumente vrátane hlavičky ( <thead> ), ale aj tela ( <tbody> ), pričom je rovnaké aj orámovanie ( rowsep )
+- Niektoré obrázky sú zmenšené aby boli krajšie zobrazené ( width=”60%” )
+- Na začiatku sa nachádza zoznam tabuliek a obrázkov ( table, figure )
+
+&nbsp;
+
+### Vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni
+- Na konci pred použitou literatúrou sa nachádza register pojmov, ktorý obsahuje požadovaný počet pojmov usporiadaných do dvoch úrovní. Zameral som sa na pojmy, ktoré majú podľa mňa význam pre tento dokument ( <index>, <indexterm>, <primary>, <secondary> )
+
+&nbsp;
+
+### Prispôsobenia v XSLT
 - Rozloženie elementov na úvodnej strane vrátane pridania nových.
 - Odstránenie horného riadku s menom kapitoly (aby sa to podobalo na pôvodný dokument)
 - Rola pre
@@ -169,7 +180,6 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 - Zmenené číslovanie obrázkov a tabuliek
 - Odstránenie slova kapitola z názvu kapitoly. Ostalo iba číslo (automaticky generované) a za ním sa nachádza požadovaný názov kapitoly
 - Podčiarknutie názvu kapitoly
-{::options parse_block_html="true" /}
 </div>
 
 
