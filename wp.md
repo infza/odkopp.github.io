@@ -187,5 +187,24 @@ Tento nástroj sa mi celkom páči aj ked má podľa mňa muchy. Je však možn�
 <div id="z3" class="tab-pane fade" style="min-height: 500px">
 # Zadanie 3
 
-Táto časť stránky bude dopalnená dodatočne
+### Cieľ
+Analyzovať možnosti zápisu jednoduchej prezentácie v jazyku XML (základné súčasti a elementy), pričom je potrebné dbať na znovupoužiteľnosť a vyvarovať sa redundancii. Návrh je potrebné realizovať pomocou vybraného jazyka (DTD, XSD, RELAX NG) spolu s vysvetlením. Nakoniec vytvoriť prezentáciu podľa definície typu dokumentu.
+
+- navrhnúť XSLT šablónu na konverziu XML do XHTML + CSS
+- navrhnúť XSLT šablónu na konverziu XML do PDF
+- umožniť parametre transformácie
+
+### Naplnenie
+Opis typu dokumentu sme realizovali pomocou RELAX NG `relaxNG.rng`, ktorý je podrobne okomentovaný priamo v súbore.
+Vytvorili sme XML súbor `a_slideshow.xml`, ktorý obsahuje prezentáciu podľa definície. Následne sme vytvoril 2 XSL súbory `xhtml.xsl` a `pdf.xsl`, ktoré transformujú XML súbor do XHTML+CSS respektíve do PDF.
+Pri transformácii do XHTML je možné zadať dva parametre. Prvý z nich, `toc_pages`, služi na zobrazenie čisla slajdu v obsahu (TOC) a druhý aparameter, `shortcuts`, vygeneruje spolu s XHTML slajdami aj jednoduché navigačné šípky, ktoré pomáhajú pohybu medzi slajdami. Vytvoril som ukážkovú prezentáciu, ktorá má zmysluplný obsah, vyzerá rovnako v PDF a XHTML a využíva všetky možnosti ktoré sú pomocou RELAX NG definované pre našu prezentáciu.
+
+Hlavnou myšlienkou pri vytváraní XSL súborov bolo získať kodularitu a možnosť vyskladať si stránku podľa predstáv. Kvôli tomu sme sa čo možno najviac vyhýbali `if` a `choice` blokom a používali sme čo najčastejšie `apply-template`. Tým sa zebazpečila jednoducha rozšíriteľnosť a možnosť nadvezovať bloky za seba (alebo aj do seba). Oba XSL súbory sú veľmi podobné a pri ich prípadnom porovnávaní by sme veľmi jednoducho našli psoločné (veľmi podobné) časi.
+
+### Prezentácia online
+Nakoľko sa počas generovania vytvárali XHTML súbory, ich zverejnenie na Webe je veľmi jednoduché. Z toho dôvodu sme sa tak rozhodli spraviť. V [publikovanej verzii](https://odkopp.github.io/slideshow/1.xhtml) prezentácie sme použili parameter `shortcuts`, na zjedondušenie navigácie v rámci slajdov.
+
+
+### Zhodnotenie 
+Výsledné prezentácie v PDF a XHTML sú na dobrej úrovni kvality a sú veľmi podobné. Na základe toho hodnotíme riešeine projektu ako úspšné. Bolo identifikovaných viacero dôležitých elementov prezentácií ale zamerali sme sa hlavne na modularitu a prácu s textom. Je teda možné vyskladať si stránku podľa predstáv a tiež je možné pracovať s textom viacerými spôsobmi (bold, italic, underline, code). 
 </div>
